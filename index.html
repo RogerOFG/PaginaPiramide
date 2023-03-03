@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+
+    <!-- BoxIcons v2.1.2 -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <main>
+        <!-- Slider -->
+        <div class="slider">
+    
+            <div class="slider-items">
+                <img class="slider-item img" src="./assets/img/01.jpg" alt="...">
+                <img class="slider-item img" src="./assets/img/02.jpg" alt="...">
+                <img class="slider-item img" src="./assets/img/03.jpg" alt="...">
+            </div>
+    
+            <div class="slider-controls">
+                <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
+                <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
+            </div>
+    
+            <div class="slider-indicators">
+                <span onclick="moveTo(1)"></span>
+                <span onclick="moveTo(2)"></span>
+                <span onclick="moveTo(3)"></span>
+            </div>
+    
+        </div>
+
+        <div class="login">
+            <img class="icn-money" src="./assets/img/icon-money.png" alt="...">
+            <h2 class="login-title"></h2>
+
+            <div class="container">
+                <form action="#" method="#" class="card">
+                    <a class="singup">Iniciar Sesión</a>
+                    <div class="inputBox1">
+                        <input type="text" required="required">
+                        <span class="user"> Correo</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="password" required="required">
+                        <span>Contraseña</span>
+                    </div>
+
+                    <button class="enter">Iniciar Sesión</button>
+
+                    <div class="group-line">
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <span>o</span>
+                        <div class="line">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <span class="cuenta">¿No tienes una cuenta? <a href="./register.html">!Registrate gratis!</a></span>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS Link -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

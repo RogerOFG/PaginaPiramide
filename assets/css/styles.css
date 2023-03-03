@@ -1,0 +1,201 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root{
+    --clr-drd: #FFB801;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*|--- -- ----- -- ---|*/
+/*|--- -- LOGIN -- ---|*/
+/*|--- -- ----- -- ---|*/
+
+main{
+    width: 100%;
+}
+
+.login {
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-20px);
+}
+
+.icn-money {
+    width: 100px;
+    padding-top: 50px;
+}
+
+/*|--- -- ----------- -- ---|*/
+/*|--- -- FORM STYLES -- ---|*/
+/*|--- -- ----------- -- ---|*/
+
+.singup {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1,
+.inputBox2 {
+    position: relative;
+    width: 250px;
+}
+
+.inputBox input,
+.inputBox1 input,
+.inputBox2 input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span,
+.inputBox2 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span,
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span,
+.inputBox2 input:valid~span,
+.inputBox2 input:focus~span{
+    padding: 5px 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    background: var(--clr-drd);
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    transform: translateX(93px) translateY(-15px);
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+    transform: translateX(136px) translateY(-15px);
+}
+
+.inputBox2 input:valid~span,
+.inputBox2 input:focus~span{
+    transform: translateX(33px) translateY(-15px);
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus,
+.inputBox2 input:valid,
+.inputBox2 input:focus {
+    border: 2px solid var(--clr-drd);
+    border-radius: 8px;
+}
+
+.enter {
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+}
+
+.enter:hover {
+    background-color: var(--clr-drd);
+    border: none;
+    color: white;
+}
+
+/*|--- -- ---------- -- ---|*/
+/*|--- -- GROUP LINE -- ---|*/
+/*|--- -- ---------- -- ---|*/
+
+.group-line{
+    width: 50%;
+    display: flex;
+    cursor: default;
+}
+
+.line{
+    width: 45%;
+}
+
+.group-line span{
+    transform: translateY(-11px);
+    padding: 0 10px 0 10px;
+}
+
+
+.cuenta{
+    padding-bottom: 80px;
+}
+
+.cuenta a{
+    font-weight: bold;
+    color: var(--clr-drd);
+}
+
+@media screen and (min-width: 666px) {
+    .login {
+        transform: translateY(0px);
+    }
+}
